@@ -1,0 +1,8 @@
+VERSION:3 SOURCE_TIMESTAMP:55423ADC
+NODE:I LEVEL:0 LINE:13 "E:\Documents\HUSKHMT(CLC)\Ky5\Xaydunghethongnhung\robot_new\Code_vison_32\inc\io.h"
+NODE:I LEVEL:0 LINE:14 "E:\Documents\HUSKHMT(CLC)\Ky5\Xaydunghethongnhung\robot_new\Code_vison_32\inc\glcd.h"
+NODE:I LEVEL:0 LINE:15 "E:\Documents\HUSKHMT(CLC)\Ky5\Xaydunghethongnhung\robot_new\Code_vison_32\inc\delay.h"
+NODE:I LEVEL:0 LINE:16 "E:\Documents\HUSKHMT(CLC)\Ky5\Xaydunghethongnhung\robot_new\Code_vison_32\inc\font5x7.h"
+NODE:M LEVEL:0 LINE:18 "button"
+NODE:M LEVEL:0 LINE:19 "bam"
+NODE:F LEVEL:0 LINE:20 "main(void)"

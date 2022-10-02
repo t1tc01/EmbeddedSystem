@@ -1,0 +1,78 @@
+/*
+ * glcdtest.c
+ *
+ * Created: 9/30/2022 9:12:44 AM
+ * Author: Hoang
+ */
+  /*                       
+  BT
+  Viet chuong trinh hien thi dong chu hello world tren man Nokia (GLCD) 
+  Viet chuong trinh ve duong tron duong kinh 10px tren glcd 
+  Viet chuong trinh ve con lat dat, bt1 thi lat dat nga~
+  */
+#include <io.h>
+#include <glcd.h>
+#include <delay.h>
+#include <font5x7.h>
+
+#define button PINB.2
+#define bam 0
+void main(void)
+{
+GLCDINIT_t glcd_init_data;
+
+glcd_init_data.font = font5x7;
+glcd_init_data.readxmem=NULL;
+glcd_init_data.writexmem=NULL;
+glcd_init_data.temp_coef=160;
+glcd_init_data.bias=6;
+glcd_init_data.vlcd=46;
+glcd_init(&glcd_init_data); 
+
+DDRB = 0x00;
+PORTB=0x04;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+while (1)
+    {
+    // Please write your application code here
+        //glcd_moveto(10, 10);
+        //glcd_outtext("Hello world");
+        //glcd_outtextxy(10,10,"hanndh");
+        //glcd_circle(10,10,10);      
+        
+        
+        
+        
+        
+                          
+        glcd_moveto(0, 40);
+        glcd_outtext("Hello world");   
+        delay_ms(500);
+        glcd_moveto(0, 0);
+        glcd_outtext("Hello world");       
+                  
+        /*    
+        int x1 = 10;
+        int y1 = 5;
+        int r1 = 5;
+        int x2 = 10; //toa do cua tam 
+        int y2 = 20;
+        int r2 = 10; //ban kinh  
+        glcd_circle(x1,y1,r1);
+        glcd_circle(x2,y2,r2);
+        
+        if (button == bam) {
+            glcd_clear();
+            x1 = x2 + r2 + x1/2;
+            y1 = y2;   
+            glcd_circle(x1,y1,r1);
+            glcd_circle(x2,y2,r2);
+            delay_ms(500);  
+            glcd_outtext("Hello world");    
+            delay_ms(500); 
+            glcd_moveto(10, 40);
+            delay_ms(500);
+            glcd_clear();            
+        }        
+        */
+    }
+}

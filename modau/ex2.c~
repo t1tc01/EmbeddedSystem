@@ -1,0 +1,17 @@
+/*
+ * ex2.c
+ *
+ * Created: 9/16/2022 9:36:53 AM
+ * Author: Hoang
+ */
+
+#include <io.h>
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}

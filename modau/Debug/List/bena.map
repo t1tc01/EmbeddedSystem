@@ -1,0 +1,61 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+glcd_state                                                                        0x0500      29
+keypad                                                                            0x051D      18
+x                                                                                 0x052F     400
+y                                                                                 0x06BF     400
+tempy                                                                             0x084F       2
+xx                                                                                0x0851       2
+yy                                                                                0x0853       2
+score                                                                             0x0855       2
+xegg                                                                              0x0857       2
+yegg                                                                              0x0859       2
+gfx_addr                                                                          0x085B       2
+gfx_buffer                                                                        0x085D     504
+_seed                                                                             0x0A55       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+dl                                                                                R5           1
+dr                                                                                R4           1
+du                                                                                R7           1
+dd                                                                                R6           1
+i                                                                                 R8,R9        2
+slength                                                                           R10,R11      2
+tempx                                                                             R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+setup                                                                             0x00194     60
+BUTTON                                                                            0x001D0     88
+check_egg                                                                         0x00228     67
+draw_snake                                                                        0x0026B     22
+move_snake                                                                        0x00281    175
+direct                                                                            0x00330     81
+main                                                                              0x00381     44
+pcd8544_delay_G100                                                                0x003AD      1
+pcd8544_wrbus_G100                                                                0x003AE     45
+pcd8544_wrcmd                                                                     0x003DB      9
+pcd8544_wrdata_G100                                                               0x003E4      9
+pcd8544_setaddr_G100                                                              0x003ED     23
+pcd8544_gotoxy                                                                    0x00404     13
+pcd8544_rdbyte                                                                    0x00411     13
+pcd8544_wrbyte                                                                    0x0041E     15
+glcd_init                                                                         0x0042D    157
+glcd_display                                                                      0x004CA     11
+glcd_clear                                                                        0x004D5     30
+glcd_putpixel                                                                     0x004F3     38
+glcd_clipx                                                                        0x00519     20
+glcd_clipy                                                                        0x0052D     18
+glcd_setpixel                                                                     0x0053F      9
+glcd_clrpixel                                                                     0x00548      9
+glcd_moveto                                                                       0x00551     13
+rand                                                                              0x0055E     29
+memset                                                                            0x0057B     16
